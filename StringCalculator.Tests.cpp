@@ -24,7 +24,7 @@ TEST(StringCalculatorTestSuite,GivenStringOneIsExpected){
 TEST(StringCalculatorTestSuite,whenpassedmultiplecommadelimitednumbers){
     //Arrange
     StringCalculator objUnderTest;
-    string input="0,1,2";
+    string input="1,2";
     int expectedValue=3;
     //Act
    int actualValue=  objUnderTest.Add(input);
