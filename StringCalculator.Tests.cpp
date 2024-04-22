@@ -11,7 +11,7 @@ TEST(StringCalculatorTestSuite,GivenEmptyStringZeroIsExpected){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST(StringCalculatorTestSuite,GivenEmptyStringZeroIsExpected){
+TEST(StringCalculatorTestSuite,GivenEmptyStringOneIsExpected){
     //Arrange
     StringCalculator objUnderTest;
     string input="1";
