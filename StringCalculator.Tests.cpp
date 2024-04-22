@@ -21,11 +21,21 @@ TEST(StringCalculatorTestSuite,GivenStringOneIsExpected){
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
-TEST(StringCalculatorTestSuite,GivenStringZeroIsExpected){
+TEST(StringCalculatorTestSuite,whenpassedmultiplecommadelimitednumbers){
     //Arrange
     StringCalculator objUnderTest;
-    string input="0";
-    int expectedValue=0;
+    string input="0,1,2";
+    int expectedValue=3;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
+TEST(StringCalculatorTestSuite,whendelimitedwithenewlineandcomma){
+    //Arrange
+    StringCalculator objUnderTest;
+    string input=""//;\n1;2";";
+    int expectedValue=3;
     //Act
    int actualValue=  objUnderTest.Add(input);
     //Assert
