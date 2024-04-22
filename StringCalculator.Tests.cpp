@@ -34,7 +34,7 @@ TEST(StringCalculatorTestSuite,whenpassedmultiplecommadelimitednumbers){
 TEST(StringCalculatorTestSuite,whendelimitedwithenewlineandcomma){
     //Arrange
     StringCalculator objUnderTest;
-    string input=""//;\n1;2";";
+    string input="//;\n1;2";
     int expectedValue=3;
     //Act
    int actualValue=  objUnderTest.Add(input);
